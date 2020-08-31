@@ -1,0 +1,39 @@
+.menu-type-btn-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 130px;
+  width: 11%;
+}
+
+.day-btn {
+  background-color: #E5B163;
+}
+
+.coffee-btn {
+  background-color: #C3846D;
+}
+
+.menu-type-btn {
+  border: 2px solid black;
+  width: 95%;
+  border-radius: 0px 20px 20px 0px;
+  text-align: end;
+  padding: 5px 15px 5px 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  outline: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .menu-type-btn {
+    font-size: 0.6em;
+    width: 110%;
+    padding: 5px;
+  }
+}
+
+.menu-type-btn:hover {
+  width: 105%;
+  transition: 300ms;
+}

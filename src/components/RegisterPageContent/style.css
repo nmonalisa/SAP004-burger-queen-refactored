@@ -1,0 +1,55 @@
+.register-page-box,
+.form-section,
+.link-box {
+  display: flex;
+}
+
+.form-box {
+  width: 55%;
+}
+
+.form-section {
+  background-color: #8E3712;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0px auto;
+  padding-top: 18%
+}
+
+@media only screen and (max-width: 600px) {
+  .form-section {
+    padding-top: 30%
+  }
+}
+
+.error-message,
+.form-item {
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+.form-item {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #E5B163;
+  border-radius: 5px;
+  margin: 7px 0px;
+  padding: 0px 8px
+}
+
+.white-font {
+  color: white;
+}
+
+.link-box {
+  font-size: 0.8em
+}
+
+.error-message {
+  border: 2px solid tomato;
+  background-color: whitesmoke;
+  color: tomato;
+  text-align: center;
+  margin-bottom: 10px;
+}

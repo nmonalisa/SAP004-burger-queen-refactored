@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Saloon from '../src/Pages/Saloon/Saloon';
+import Login from '../src/Pages/Login/Login';
+import Register from '../src/Pages/Register/Register';
+import Kitchen from '../src/Pages/Kitchen/Kitchen';
+import Delivery from '../src/Pages/Delivery/Delivery';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  return (<Router>
+    <Switch>
+      <Route path="/"
+        exact >
+        <Login />
+      </Route>
+      <Route path="/register" >
+        <Register />
+      </Route>
+      <Route path="/saloon" >
+        <Saloon />
+      </Route>
+      <Route path="/kitchen" >
+        <Kitchen />
+      </Route>
+      <Route path="/delivery">
+        <Delivery />
+      </Route>
+    </Switch>
+  </Router>
+  )
 }
 
-export default App;
+export default App

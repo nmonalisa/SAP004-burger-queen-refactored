@@ -1,0 +1,36 @@
+.card-area,
+.main-delivery-area,
+.delivery-title-box h2 {
+  display: flex;
+}
+
+.delivery-title-box {
+  margin: 20px auto;
+}
+
+.delivery-title-box h2 {
+  align-items: center;
+}
+
+.main-delivery-area {
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.hourglass-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.clock-img {
+  width: 20px;
+  margin-right: 10%;
+}
+
+.card-area {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

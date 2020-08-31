@@ -1,0 +1,37 @@
+.header-page {
+  justify-content: space-between;
+  background-color: #8E3712;
+  color: #F5F5F5;
+  font-weight: bold;
+  height: 50px;
+  padding: 5px 35px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 400px) {
+  .header-page {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+}
+
+.logotype {
+  width: 80px;
+  height: 40px;
+}
+
+.log-out {
+  width: 30px;
+  height: 30px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #F5F5F5;
+  margin-right: 20px;
+}

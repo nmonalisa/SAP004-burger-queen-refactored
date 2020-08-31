@@ -1,0 +1,50 @@
+.menu-box {
+  width: 87%;
+  margin: auto;
+}
+
+.menu-title {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 90px;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+.menu-item-box {
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 15px;
+}
+
+.menu-btn-day {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  background-color: #F3E3CC;
+  height: 55px;
+  width: 45%;
+  border: 1px solid #E5B163;
+  margin: 3px;
+}
+
+@media only screen and (max-width: 350px) {
+  .menu-btn-day {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 500px) {
+  .menu-btn-day {
+    font-size: 0.7em;
+  }
+}
+
+.menu-btn-day:hover {
+  background-color: #E5B163;
+}

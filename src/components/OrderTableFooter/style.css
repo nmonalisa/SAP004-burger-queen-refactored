@@ -1,0 +1,55 @@
+.order-footer-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.table-footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 32%;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid gray;
+  outline: none;
+}
+
+.send-btn {
+  border: 2px solid #0DAEB3;
+  color: #0DAEB3;
+}
+
+.send-btn:hover {
+  background-color: #0DAEB3;
+  color: white;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  border: 2px solid #CF4343;
+  color: #CF4343;
+}
+
+.cancel-btn:hover {
+  background-color: #CF4343;
+  color: white;
+  cursor: pointer;
+}
+
+.icon {
+  width: 15px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .order-footer-box {
+    font-size: 0.7em;
+  }
+  .icon {
+    margin-right: 3px;
+  }
+}

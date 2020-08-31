@@ -1,0 +1,15 @@
+.order-header-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #69846C;
+  color: white;
+  font-weight: bold;
+  padding: 7px 10px;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 400px) {
+  .order-header-box {
+    font-size: 0.7em;
+  }
+}

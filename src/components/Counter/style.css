@@ -1,0 +1,45 @@
+.counter-box {
+  display: flex;
+  align-items: center;
+}
+
+.delete {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.delete:hover {
+  height: 25px;
+  width: 25px;
+}
+
+.counter-btn {
+  border: none;
+  width: 22px;
+  height: 22px;
+  font-size: 1.2em;
+}
+
+.quantifier {
+  background-color: white;
+}
+
+.increase-btn,
+.decrease-btn {
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.increase-btn {
+  background-color: #37AE60;
+}
+
+.decrease-btn {
+  background-color: #F00E0E;
+}
+
+.increase-btn:hover,
+.decrease-btn:hover {
+  opacity: 0.5;
+}

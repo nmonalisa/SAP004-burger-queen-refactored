@@ -1,0 +1,22 @@
+.select-label {
+  margin-bottom: 7px;
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  color: #E5E5E5;
+  font-weight: bold;
+}
+
+.select-options {
+  background-color: #4543B5;
+  color: #E5E5E5;
+  border: 1px solid #E5B163;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
