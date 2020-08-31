@@ -60,6 +60,9 @@ Durante o planejamento do projeto nós realizamos protótipos de baixa e alta fi
 * [Figma](https://www.figma.com/) - plataforma de prototipagem
 * [Trello](https://trello.com/pt-BR) - gerenciador de projeto
 
+## Próximos passos:
+* Implementar histórico de pedidos na cozinha
+
 ## 5. Autoras
 Trabalho desenvolvido durante o bootcamp de programação front-end da Laboratória (SAP004) em dupla com Luana Arêdes e posteriormente refatorado individualmente por mim. Link do projeto original: https://burger-queen-f7f70.web.app/
 
