@@ -22,7 +22,12 @@ function SaloonContent({
   calculateTotalPrice,
   cleanOrder,
   validateAndSendData,
-  place
+  place,
+  setBurgerOptions,
+  addEgg,
+  addCheese,
+  setAddCheese,
+  setAddEgg
 }) {
   return (
     <div>
@@ -54,9 +59,15 @@ function SaloonContent({
           calculateTotalPrice={calculateTotalPrice}
           cleanOrder={cleanOrder}
           validateAndSendData={validateAndSendData}
+          setBurgerOptions={setBurgerOptions()}
+          addCheese={addCheese}
+          addEgg={addEgg}
+          setAddCheese={setAddCheese}
+          setAddEgg={setAddEgg}
         />}
       </main>
-    </div>
+      <button onClick={() => console.log(order)}>Ver pedidos</button>
+    </div >
   );
 }
 
