@@ -1,3 +1,8 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-card-area {
   margin: 15px 0px;
   height: 100px;
@@ -35,9 +40,23 @@
   font-size: 0.8em;
 }
 
-.flex {
+.burger-options {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.burger-options div {
+  margin-left: 3px;
+}
+
+.additionals {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.additionals div {
+  margin-right: 7px;
 }
 
 .input-item {

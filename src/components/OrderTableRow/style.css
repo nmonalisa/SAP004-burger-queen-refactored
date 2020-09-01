@@ -8,3 +8,42 @@
   padding: 0px 10px;
   font-size: 0.9em;
 }
+
+.option,
+.meat-option {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.option {
+  justify-content: center;
+}
+
+.additionals {
+  justify-content: flex-start;
+  width: 20%;
+}
+
+.options-box {
+  display: flex;
+  align-items: center;
+}
+
+.options-box label {
+  margin-left: 3px;
+}
+
+@media only screen and (max-width: 500px) {
+  .meat-option {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .additionals {
+    width: 28%;
+  }
+}

@@ -6,13 +6,13 @@ const AllMenuDay = [{
   }, {
     item: 'Hamburguer simples',
     price: 10,
-    options: '-',
-    additional: '-'
+    options: ['boi', 'frango', 'veg'],
+    additional: ['ovo', 'queijo']
   }, {
     item: 'Hamburguer duplo',
     price: 15,
-    options: '-',
-    additional: '-'
+    options: ['boi', 'frango', 'veg'],
+    additional: ['ovo', 'queijo']
   }, {
     item: 'Refrigerante 500ml',
     price: 7,

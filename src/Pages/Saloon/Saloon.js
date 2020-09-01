@@ -13,6 +13,8 @@ function Saloon() {
   const [tableNumber, setTableNumber] = useState(false)
   const [totalPrice, setTotalPrice] = useState(0)
   const database = db.collection('orders')
+  const [addEgg, setAddEgg] = useState(false)
+  const [addCheese, setAddCheese] = useState(false)
 
   useEffect(() => {
     calculateTotalPrice()
@@ -40,9 +42,35 @@ function Saloon() {
 
   const deleteItem = () => {
     return (itemID) => {
+      console.log(itemID)
+      console.log(order)
       const newData = order.filter((item, index) => index !== itemID)
       setOrder(newData)
     }
+  }
+  const setBurgerOptions = () => {
+    return (burgerOption, itemIndex) => {
+      order[itemIndex].chosenOption = burgerOption
+    }
+  }
+
+  const getTime = () => {
+    const date = new Date();
+    const timeStamp = date.toLocaleTimeString();
+    order[0].timeStamp = timeStamp
+  }
+
+
+  const setBurgerAdditionals = () => {
+    return (value, itemID) => {
+      value === 'ovo' ?
+        setAddEgg(!addEgg) : setAddCheese(!addCheese)
+      addEggToBurger(itemID)
+    }
+  }
+
+  const addEggToBurger = (itemIndex) => {
+    order[itemIndex].addEgg = addEgg
   }
 
   const addClientInfosToOrder = () => {
@@ -77,6 +105,7 @@ function Saloon() {
 
   const sendOrderToDataBase = () => {
     addClientInfosToOrder()
+    getTime()
     database.add({ order })
       .then(() => {
         console.log('Pedido:', order);
@@ -108,6 +137,12 @@ function Saloon() {
         cleanOrder={() => cleanOrder()}
         validateAndSendData={() => validateAndSendData(clientName, tableNumber, order)}
         place={'saloon'}
+        setBurgerOptions={setBurgerOptions()}
+        setBurgerAdditionals={setBurgerAdditionals()}
+        addCheese={addCheese}
+        addEgg={addEgg}
+        setAddCheese={setAddCheese}
+        setAddEgg={setAddEgg}
       />
     </div>
   );

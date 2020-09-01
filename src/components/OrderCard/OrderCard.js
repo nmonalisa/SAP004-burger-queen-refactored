@@ -9,11 +9,26 @@ const OrderCard = ({ place, order, orderID, handleClick }) => {
       </header>
 
       <main className='main-card-area'>
-        {order.map(orderItem => {
+        {order.map((orderItem, index) => {
           return (
-            <div className='card-body'>
-              {place === 'kitchen' ? <input className='input-item' type='checkbox' /> : false}
-              {orderItem.item}
+            <div className='card-body flex' key={index}>
+              <div className='flex'>
+                {place === 'kitchen' ?
+                  <input className='input-item' type='checkbox' />
+                  : false
+                }
+                <div>{orderItem.quantity}  {orderItem.item}</div>
+              </div>
+
+              <aside className='burger-options flex'>
+                {!!orderItem.addEgg && <div>OVO</div>}
+                {!!orderItem.addCheese && <div>QUEIJO</div>}
+                {orderItem.chosenOption !== undefined ?
+                  <div>
+                    {(orderItem.chosenOption).toUpperCase()}
+                  </div> : false
+                }
+              </aside>
             </div>
           )
         })}
@@ -26,7 +41,7 @@ const OrderCard = ({ place, order, orderID, handleClick }) => {
             src={require('../../assets/clock (3).png')}
             alt='Horário'
             className='clock-img' />
-          <span>Horário</span>
+          <span>{order[0].timeStamp}</span>
 
         </div>
         <button
@@ -36,7 +51,7 @@ const OrderCard = ({ place, order, orderID, handleClick }) => {
             'Pronto' : 'Entregue'}
         </button>
       </footer>
-    </section>
+    </section >
   )
 }
 
