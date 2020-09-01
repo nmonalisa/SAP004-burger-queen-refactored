@@ -21,7 +21,6 @@ function Kitchen() {
 
   const markOrderAsReady = () => {
     return (orderID, order) => {
-      console.log('este pedido está pronto')
       deleteOrderOfLocalList(orderID)
       deleteOrderOfDatabase(orderID)
       sendOrderToReadyList(order, orderID)

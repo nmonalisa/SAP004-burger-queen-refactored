@@ -9,10 +9,9 @@ function OrderTableRow({
   deleteItem,
   calculateTotalPrice,
   setBurgerOptions,
+  setBurgerAdditionals,
   addCheese,
   addEgg,
-  setAddCheese,
-  setAddEgg
 }) {
 
   const showBurgerOptions = (optionsList, itemID) => {
@@ -30,14 +29,10 @@ function OrderTableRow({
       )
     })
   }
-  const changeBurgerAdditionals = value => {
-    return (value) => {
-      value === 'ovo' ?
-        setAddEgg(!addEgg) : setAddCheese(!addCheese)
-    }
-  }
 
-  const showBurgerAdditionals = (addList) => {
+
+
+  const showBurgerAdditionals = (addList, itemID) => {
     return addList.map((add, index) => {
       return (
         <div className='options-box' key={index}>
@@ -46,7 +41,7 @@ function OrderTableRow({
             name={add}
             value={add}
             checked={add === 'ovo' ? addEgg : addCheese}
-            onChange={(e) => changeBurgerAdditionals(e.target.value)}
+            onChange={(event) => setBurgerAdditionals(event.target.value, itemID)}
           />
           <label htmlFor={add}>{add}</label>
         </div>

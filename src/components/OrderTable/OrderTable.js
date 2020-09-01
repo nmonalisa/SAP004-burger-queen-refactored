@@ -15,7 +15,8 @@ function OrderTable({
   calculateTotalPrice,
   cleanOrder,
   validateAndSendData,
-  setBurgerOptions
+  setBurgerOptions,
+  setBurgerAdditionals
 }) {
   return (
     <section className='order-box'>
@@ -38,6 +39,7 @@ function OrderTable({
             deleteItem={deleteItem}
             calculateTotalPrice={calculateTotalPrice}
             setBurgerOptions={setBurgerOptions}
+            setBurgerAdditionals={setBurgerAdditionals}
           />
           )
           }

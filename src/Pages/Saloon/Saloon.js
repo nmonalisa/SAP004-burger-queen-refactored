@@ -20,11 +20,6 @@ function Saloon() {
     calculateTotalPrice()
   }, [order])
 
-
-  useEffect(() => {
-    setBurguerAdditionals()
-  }, [addEgg])
-
   const showMenuDay = () => {
     setMenuCoffee(false)
     setMenuDay(AllMenuDay)
@@ -47,7 +42,9 @@ function Saloon() {
 
   const deleteItem = () => {
     return (itemID) => {
-      const newData = order.filter(index => index !== itemID)
+      console.log(itemID)
+      console.log(order)
+      const newData = order.filter((item, index) => index !== itemID)
       setOrder(newData)
     }
   }
@@ -57,8 +54,23 @@ function Saloon() {
     }
   }
 
-  const setBurguerAdditionals = () => {
-    console.log('adicionei')
+  const getTime = () => {
+    const date = new Date();
+    const timeStamp = date.toLocaleTimeString();
+    order[0].timeStamp = timeStamp
+  }
+
+
+  const setBurgerAdditionals = () => {
+    return (value, itemID) => {
+      value === 'ovo' ?
+        setAddEgg(!addEgg) : setAddCheese(!addCheese)
+      addEggToBurger(itemID)
+    }
+  }
+
+  const addEggToBurger = (itemIndex) => {
+    order[itemIndex].addEgg = addEgg
   }
 
   const addClientInfosToOrder = () => {
@@ -93,6 +105,7 @@ function Saloon() {
 
   const sendOrderToDataBase = () => {
     addClientInfosToOrder()
+    getTime()
     database.add({ order })
       .then(() => {
         console.log('Pedido:', order);
@@ -124,7 +137,8 @@ function Saloon() {
         cleanOrder={() => cleanOrder()}
         validateAndSendData={() => validateAndSendData(clientName, tableNumber, order)}
         place={'saloon'}
-        setBurgerOptions={setBurgerOptions}
+        setBurgerOptions={setBurgerOptions()}
+        setBurgerAdditionals={setBurgerAdditionals()}
         addCheese={addCheese}
         addEgg={addEgg}
         setAddCheese={setAddCheese}

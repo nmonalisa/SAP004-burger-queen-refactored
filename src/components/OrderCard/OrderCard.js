@@ -14,14 +14,15 @@ const OrderCard = ({ place, order, orderID, handleClick }) => {
             <div className='card-body flex' key={index}>
               <div className='flex'>
                 {place === 'kitchen' ?
-                  <input className='input-item' type='checkbox' /> : false
+                  <input className='input-item' type='checkbox' />
+                  : false
                 }
-                <div>{orderItem.item}</div>
+                <div>{orderItem.quantity}  {orderItem.item}</div>
               </div>
 
               <aside className='burger-options flex'>
-                <div>OVO</div>
-                <div> QUEIJO</div>
+                {!!orderItem.addEgg && <div>OVO</div>}
+                {!!orderItem.addCheese && <div>QUEIJO</div>}
                 {orderItem.chosenOption !== undefined ?
                   <div>
                     {(orderItem.chosenOption).toUpperCase()}
@@ -40,7 +41,7 @@ const OrderCard = ({ place, order, orderID, handleClick }) => {
             src={require('../../assets/clock (3).png')}
             alt='Horário'
             className='clock-img' />
-          <span>Horário</span>
+          <span>{order[0].timeStamp}</span>
 
         </div>
         <button
