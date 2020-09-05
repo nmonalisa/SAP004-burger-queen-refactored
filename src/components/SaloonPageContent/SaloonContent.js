@@ -68,7 +68,6 @@ function SaloonContent({
           setAddEgg={setAddEgg}
         />}
       </main>
-      <button onClick={() => console.log(order)}>Ver pedidos</button>
     </div>
   );
 }

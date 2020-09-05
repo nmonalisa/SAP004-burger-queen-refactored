@@ -5,11 +5,15 @@ const AllMenuDay = [{
     additional: '-'
   }, {
     item: 'Hamburguer simples',
+    addEgg: false,
+    addCheese: false,
     price: 10,
     options: ['boi', 'frango', 'veg'],
     additional: ['ovo', 'queijo']
   }, {
     item: 'Hamburguer duplo',
+    addEgg: false,
+    addCheese: false,
     price: 15,
     options: ['boi', 'frango', 'veg'],
     additional: ['ovo', 'queijo']

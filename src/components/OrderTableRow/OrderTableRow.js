@@ -29,9 +29,6 @@ function OrderTableRow({
       )
     })
   }
-
-
-
   const showBurgerAdditionals = (addList, itemID) => {
     return addList.map((add, index) => {
       return (
@@ -40,7 +37,6 @@ function OrderTableRow({
             type='checkbox'
             name={add}
             value={add}
-            checked={add === 'ovo' ? addEgg : addCheese}
             onChange={(event) => setBurgerAdditionals(event.target.value, itemID)}
           />
           <label htmlFor={add}>{add}</label>
