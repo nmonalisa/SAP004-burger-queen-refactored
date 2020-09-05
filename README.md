@@ -54,8 +54,8 @@ Durante o planejamento do projeto nós realizamos protótipos de baixa e alta fi
 
 ## 4. Resultado:
 
-* Visão geral do salão: [aqui](src/assets/salao_overview.gif)
-* Visão geral do salão: [aqui](src/assets/cozinha_overview.gif)
+* ![Visão geral do salão](src/assets/salao_overview.gif)
+* ![Visão geral da cozinha](src/assets/cozinha_overview.gif)
 
 
 ## 5. Ferramentas utilizadas
