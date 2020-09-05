@@ -49,9 +49,16 @@ A interface do app foi planejada para atender as seguintes necessidades de usuá
 
 Durante o planejamento do projeto nós realizamos protótipos de baixa e alta fidelidade (imagem abaixo). Ajustes em relação à concepção inicial da interface foram implementados a partir de consultas a potenciais usuários e de acordo com a nossa própria percepção, sempre com o objetivo de melhorar a usabilidade e a experiência do usuário.
 
-![Protótipo de alta fidelidade](src/assets/prototipo-high-quality.png)
+![Protótipo de média fidelidade](src/assets/prototipo-high-quality.png)
 
-## 4. Ferramentas utilizadas
+
+## 4. Resultado:
+
+* Visão geral do salão: [aqui](src/assets/salao_overview.gif)
+* Visão geral do salão: [aqui](src/assets/cozinha_overview.gif)
+
+
+## 5. Ferramentas utilizadas
 * [React](https://pt-br.reactjs.org/) - biblioteca Javascript para criar interfaces de usuário
 * [Firebase](https://firebase.google.com/) - plataforma de hospedagem do banco de dados.
 * [Node.js](https://nodejs.org/en/) - plataforma de desenvolvimento.
@@ -63,7 +70,7 @@ Durante o planejamento do projeto nós realizamos protótipos de baixa e alta fi
 ## Próximos passos:
 * Implementar histórico de pedidos na cozinha
 
-## 5. Autoras
+## 6. Autoras
 Trabalho desenvolvido durante o bootcamp de programação front-end da Laboratória (SAP004) em dupla com Luana Arêdes e posteriormente refatorado individualmente por mim. Link do projeto original: https://burger-queen-f7f70.web.app/
 
 ## 6. Créditos
