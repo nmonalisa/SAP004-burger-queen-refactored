@@ -54,10 +54,10 @@ Durante o planejamento do projeto nós realizamos protótipos de baixa e alta fi
 
 ## 4. Resultado
 
-#### 4.1 Visão geral do salão:
+#### 4.1 Registro de usuário e visão geral do salão
 ![salão](src/assets/salao_overview.gif)
 
-#### 4.2 Visão geral da cozinha
+#### 4.2 Login e visão geral da cozinha
 ![cozinha](src/assets/cozinha_overview.gif)
 
 
