@@ -52,10 +52,13 @@ Durante o planejamento do projeto nós realizamos protótipos de baixa e alta fi
 ![Protótipo de média fidelidade](src/assets/prototipo-high-quality.png)
 
 
-## 4. Resultado:
+## 4. Resultado
 
-* ![Visão geral do salão](src/assets/salao_overview.gif)
-* ![Visão geral da cozinha](src/assets/cozinha_overview.gif)
+#### 4.1 Registro de usuário e visão geral do salão
+![salão](src/assets/salao_overview.gif)
+
+#### 4.2 Login e visão geral da cozinha
+![cozinha](src/assets/cozinha_overview.gif)
 
 
 ## 5. Ferramentas utilizadas
